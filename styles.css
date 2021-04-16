@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 100px;
+}
+
+.button {
+  background: transparent linear-gradient(90deg, #266EFD 0%, #3876F1 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 17px #3876F194;
+  height: 46px;
+  padding: 0 10px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .button {
+    font-size: 20px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper.wrapper {
+    padding: 0 140px;
+  }
+}
+
+.hero {
+  background-image: url("./hero.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero__content {
+  margin-bottom: 70px;
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  margin-top: 0;
+  text-shadow: 0 0 4px rgb(0, 0, 0, 50%);
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.hero__description {
+  text-shadow: 0 0 4px rgb(0, 0, 0, 50%);
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 16px;
+}
+
+.hero__button {
+  padding: 0 31px;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    min-height: 540px;
+  }
+  .hero__title {
+    font-size: 48px;
+  }
+  .hero__description {
+    font-size: 20px;
+  }
+}
+
+.offers {
+}
+
+.offers__header {
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.offers__list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.offers__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.offers__view-all {
+  color: #276FFB;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.offers__list .offer {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .offers__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+  .offers__title {
+    font-size: 48px;
+  }
+  .offers__list .offer {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .offers__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .offers .offer {
+    padding-right: 20px;
+    border-right: 1px solid lightgray;
+  }
+}
+
+.offer {
+  font-family: Manrope, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.offer__role {
+  color: #276FFB;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.offer__company {
+  font-size: 16px;
+  font-weight: lighter;
+  color: #141414;
+  margin: 0 16px 0 0;
+}
+
+.offer__location {
+  font-size: 16px;
+  font-weight: lighter;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.offer__publish-time {
+  font-size: 14px;
+  font-weight: lighter;
+  opacity: 0.6;
+  margin: 0 0 12px 0;
+}
+
+.offer__description {
+  font-size: 16px;
+  font-weight: lighter;
+  opacity: 0.6;
+}
+
+.offer__cta {
+  width: 43px;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 1000px) {
+  .offer__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .offer__role {
+    font-size: 24px;
+  }
+  .offer__company {
+    font-size: 20px;
+  }
+  .offer__location {
+    font-size: 20px;
+  }
+  .offer__publish-time {
+    font-size: 18px;
+  }
+  .offer__description {
+    font-size: 20px;
+  }
+}
+
+.featured {
+
+}
+
+.featured__title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.featured__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featured__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 146px;
+}
+
+.featured__icon {
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  width: 91px;
+  height: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured__name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1000px) {
+  .featured__title {
+    font-size: 48px;
+  }
+}
